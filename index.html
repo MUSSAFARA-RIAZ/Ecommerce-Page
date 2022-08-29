@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+        <div id="navbar">
+            <h1>SNEAKERS</h1>
+      
+                
+            <li>Collection</li>
+                <li>Men</li>
+                <li>Women</li>
+                <li>About</li>
+                <li>Contact</li>
+                <div id="cart">
+                  <p id="text">Your Cart Is Empty</p>
+                  <button id="btncheck">CheckOut</button>
+                </div>
+                <img id="img1" onclick="cart_func()" ondblclick="cart_func2()" src="./Images/icon-cart.svg" alt="">
+              
+                
+                <img id="img2" src="./Images/image-avatar.png" alt="">
+                
+            
+        </div>
+    </nav>
+    <section>
+        <section id="parent-div">
+            <div id="first-div">
+                <img id="big-img1" class="big-img" src="./Images/images/image-product-1-thumbnail.jpg" alt="">
+                <img  id="big-img2" class="big-img" src="./Images/images/image-product-2-thumbnail.jpg" alt="">
+                <img  id="big-img3" class="big-img" src="./Images/images/image-product-3-thumbnail.jpg" alt="">
+                <img  id="big-img4" class="big-img" src="./Images/images/image-product-4-thumbnail.jpg" alt="">
+                
+               
+                <div class="slider-img">
+                <span><img onclick="func1()" class="small-img" id="small-img1" src="./Images/image-product.jpg" alt=""></span>
+                
+                <span><img  onclick="func2()" class="small-img" id="small-img2" src="./Images/images/image-product-2.jpg" alt=""></span>
+                <span><img  onclick="func3()" class="small-img" id="small-img3" src="./Images/images/image-product-3.jpg" alt=""></span>
+                <span><img  onclick="func4()" class="small-img" id="small-img4" src="./Images/images/image-product-4.jpg" alt=""></span>
+               </div>
+
+
+
+            </div>
+            <div id="second-div">
+                <h1>SNEAKER COMPANY</h1>
+                <p>Fall Limited Addition Sneakers</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, cum corporis eligendi odit culpa ducimus laborum, ipsum fuga, consequuntur expedita iure excepturi architecto hic accusantium.</p>
+                <span>$125.00</span>
+                <span>50%</span>
+                <p id="cut">$250.00</p>
+                
+                    <span>
+                      <button class="btn" onclick="decrement()" ><img  src="./Images/icon-minus.svg" alt=""></button> 
+                    </span>
+                    <span>
+                        <span id="itemno">0</span>
+                    </span>
+                    <span>
+                        <button class="btn" onclick="increment()" ><img  src="./Images/icon-plus.svg" alt=""></button>
+                    </span>
+             
+
+                   <span>
+                        <button id="btn3" onclick="shopping()">Add to Carts</button>
+                    </span>
+             
+                   
+</div>
+                  </section>   
+                  
+                 <script src="index.js"></script>
+</body>
+</html>
